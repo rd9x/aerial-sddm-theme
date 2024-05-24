@@ -46,14 +46,14 @@ Rectangle {
         id: image1
         anchors.fill: parent
         //source: config.background
-        fillMode: Image.PreserveAspectCrop
+        fillMode: Image.PreserveAspectStretch
     }
 
     // Set Animated GIF Background Image
     AnimatedImage {
         id: animatedGIF1
         anchors.fill: parent
-        fillMode: AnimatedImage.PreserveAspectCrop
+        fillMode: AnimatedImage.PreserveAspectStretch
     }
 
     // Set Background Video1
@@ -69,7 +69,7 @@ Rectangle {
 
     VideoOutput {
         id: video1
-        fillMode: VideoOutput.PreserveAspectCrop
+        fillMode: VideoOutput.PreserveAspectStretch
         anchors.fill: parent; source: mediaplayer1
         MouseArea {
             id: mouseArea1
