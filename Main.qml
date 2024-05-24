@@ -69,7 +69,7 @@ Rectangle {
 
     VideoOutput {
         id: video1
-        fillMode: VideoOutput.PreserveAspectStretch
+        fillMode: VideoOutput.Stretch
         anchors.fill: parent; source: mediaplayer1
         MouseArea {
             id: mouseArea1
@@ -114,7 +114,7 @@ Rectangle {
 
     VideoOutput {
         id: video2
-        fillMode: VideoOutput.PreserveAspectCrop
+        fillMode: VideoOutput.Stretch
         anchors.fill: parent; source: mediaplayer2
         opacity: 0
         MouseArea {
