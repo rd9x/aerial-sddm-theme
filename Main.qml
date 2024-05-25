@@ -177,7 +177,7 @@ Rectangle {
     Rectangle {
         id: rectangle
         anchors.fill: parent
-        color: "12000000"
+        color: "transparent"
 
         Column {
             id: clock
