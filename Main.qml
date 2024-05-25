@@ -76,7 +76,6 @@ Rectangle {
             anchors.fill: parent;
             //onPressed: {playlist1.shuffle(); playlist1.next();}
             onPressed: {
-                fader1.state = fader1.state == "off" ? "on" : "off" ;
                 if (config.autofocusInput == "true") {
                     if (username_input_box.text == "")
                         username_input_box.focus = true
@@ -86,21 +85,11 @@ Rectangle {
             }
         }
         Keys.onPressed: {
-            fader1.state = "on";
             if (username_input_box.text == "")
                 username_input_box.focus = true
             else
                 password_input_box.focus = true
         }
-    }
-    WallpaperFader {
-        id: fader1
-        visible: true
-        anchors.fill: parent
-        state: "off"
-        source: video1
-        mainStack: login_container
-        footer: login_container
     }
 
     // Set Background Video2
@@ -122,7 +111,6 @@ Rectangle {
             enabled: false
             anchors.fill: parent;
             onPressed: {
-                fader1.state = fader1.state == "off" ? "on" : "off" ;
                 if (config.autofocusInput == "true") {
                     if (username_input_box.text == "")
                         username_input_box.focus = true
@@ -136,22 +124,11 @@ Rectangle {
             NumberAnimation { easing.type: Easing.InOutQuad; duration: 3000 }
         }
         Keys.onPressed: {
-            fader2.state = "on";
             if (username_input_box.text == "")
                 username_input_box.focus = true
             else
                 password_input_box.focus = true
         }
-    }
-
-    WallpaperFader {
-        id: fader2
-        visible: true
-        anchors.fill: parent
-        state: "off"
-        source: video2
-        mainStack: login_container
-        footer: login_container
     }
 
     property MediaPlayer currentPlayer: mediaplayer1
@@ -196,13 +173,11 @@ Rectangle {
         }
     }
 
-
-
     // Clock and Login Area
     Rectangle {
         id: rectangle
         anchors.fill: parent
-        color: "transparent"
+        color: "12000000"
 
         Column {
             id: clock
