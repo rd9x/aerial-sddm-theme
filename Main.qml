@@ -253,7 +253,7 @@ Rectangle {
                     anchors.right: parent.right
                     anchors.rightMargin: 0
                     font: textFont.name
-                    color: "#25000000"
+                    color: "#77000000"
                     borderColor: "transparent"
                     textColor: "white"
 
@@ -295,7 +295,7 @@ Rectangle {
                     id: password_input_box
                     height: parent.height
                     font: textFont.name
-                    color: "#25000000"
+                    color: "#77000000"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.right: parent.right
                     anchors.rightMargin: parent.height // this sets button width, this way its a square
@@ -303,7 +303,7 @@ Rectangle {
                     anchors.leftMargin: config.passwordLeftMargin
                     borderColor: "transparent"
                     textColor: "white"
-                    tooltipBG: "#25000000"
+                    tooltipBG: "#77000000"
                     tooltipFG: "#dc322f"
                     image: "components/resources/warning_red.png"
                     onTextChanged: {
